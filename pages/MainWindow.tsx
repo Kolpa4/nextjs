@@ -1,7 +1,7 @@
 import React from 'react'
-import ButtonPortal from '../components/ButtonPortal';
-import RNDgenerator from '../components/RNDgenerator';
-import Square from '../components/Square';
+import ButtonPortal from '../imports/ButtonPortal';
+import RNDgenerator from '../imports/RNDgenerator';
+import Square from '../imports/Square';
 
 const MainWindow = () => {
     return (
