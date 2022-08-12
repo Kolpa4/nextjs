@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "imports/RNDgenerator.jsx"  ],
+, "imports/Portal.tsx"  ],
   "exclude": [
     "node_modules"
   ]

@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
-import RNDgenerator from "../imports/RNDgenerator"
+import RNDgenerator from "./Portal"
 
 const TelegramChannels = () => {
 
     const MyComponent = ({ num }: { num: number }) => 
 
-        <MyComponent num={num}/>
+        <MyComponent customprops num={num}/>
   return (
     <div>
    
