@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 
 function Square() {
-    const [coordinates, setCoordinates] = useState({x:0, y:0})
+    const [coordinates, setCoordinates] = useState({x:950, y:300})
     
     
     console.log(coordinates)

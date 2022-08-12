@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link';
 
 
 function ButtonPortal() {
@@ -15,12 +16,9 @@ function ButtonPortal() {
         backgroundColor: 'white',
         transform: 'translate(-50%, -50%)',
         fontSize:34,
-        textAlign:'center',
         justifyContent: 'center'
-        
         }}
-        // onClick = {()}
-        >ПОРТАЛ</button>
+        ><Link href="/Casino"><a>ПОРТАЛ</a></Link></button>
       <div/>
     </div>
   );
