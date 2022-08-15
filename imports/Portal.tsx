@@ -26,7 +26,7 @@ export const Portal = ({
       clearInterval(interval);
       const newNum = randomNumberInRange(1, 100)
       setNum(newNum);
-      setRoom(Math.floor(newNum/12))
+      setRoom(Math.floor((newNum/13)+1))
     }, 3000);
   };
 
@@ -36,7 +36,10 @@ export const Portal = ({
       <h2>ЧИСЛО: {num || tempNum}</h2>
       <button onClick={handleClick}>Случайное число от 1 до 100</button>
 
-      {!!room && <Room roomId={room}/>}
+      {!!room && <Room roomId={room} page={'room'} setPage={setPage}/>}
+
+      <p><button onClick={() => setPage('profile')}>Профиль</button></p>
+      
     </div>
   </>);
 };
