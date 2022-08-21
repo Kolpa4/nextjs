@@ -33,7 +33,7 @@ export const Portal = ({
  
   return (<>
     <div>
-      <h2>ЧИСЛО: {num || tempNum}</h2>
+      <h2>Событие: {num || tempNum}</h2>
       <button onClick={handleClick}>Случайное число от 1 до 100</button>
 
       {!!room && <Room roomId={room} page={'room'} setPage={setPage}/>}

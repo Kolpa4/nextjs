@@ -5,7 +5,7 @@ import { useQuery, useSubscription, gql } from '@apollo/client';
 import { LocalStoreProvider, useLocalStore } from '@deep-foundation/store/local';
 import { MinilinksLink, MinilinksResult, useMinilinksConstruct } from '@deep-foundation/deeplinks/imports/minilinks';
 import { ChakraProvider } from '@chakra-ui/react';
-import { Authorisation } from '../imports/Authorisation';
+import {Authorisation} from '../imports/Authorisation';
 import Profile from '../imports/Profile';
 import {Portal} from '../imports/Portal';
 import Notepad from '../imports/Notepad';
