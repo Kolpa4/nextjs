@@ -8,6 +8,7 @@ export const Authorisation = ({
   setPage?: (page: string) => any;
 }) => {
   return (<>
+  
     <p><button onClick={() => setPage('profile')}>Профиль</button></p>
   </>);
 }
