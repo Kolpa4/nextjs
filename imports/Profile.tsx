@@ -11,7 +11,7 @@ export default function Profile({
   return (
     <div>
       <p><button onClick={() => setPage('portal')}>ПОРТАЛ</button></p>
-      <p><button onClick={() => setPage('notepad')}>Блокнот</button></p>
+      <p><button onClick={() => setPage('notepad')}>Дневник Путешественника</button></p>
     </div>
   )
 }

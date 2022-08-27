@@ -16,9 +16,17 @@ import Room4 from '../imports/Rooms/Room4';
 import Room5 from '../imports/Rooms/Room5';
 import Room6 from '../imports/Rooms/Room6';
 import Room7 from '../imports/Rooms/Room7';
-import Room8 from '../imports/Rooms/Room8';
 import Quest1 from '../imports/Quests/Quest1';
 import Quest2 from '../imports/Quests/Quest2';
+import Quest3 from '../imports/Quests/Quest3';
+import Quest4 from '../imports/Quests/Quest4';
+import Quest5 from '../imports/Quests/Quest5';
+import Quest6 from '../imports/Quests/Quest6';
+import Quest7 from '../imports/Quests/Quest7';
+import Quest8 from '../imports/Quests/Quest8';
+import Quest9 from '../imports/Quests/Quest9';
+import Quest10 from '../imports/Quests/Quest10';
+import Quest11 from '../imports/Quests/Quest11';
 
 const Intro = ({
   page,
@@ -48,9 +56,17 @@ export default function Index() {
       {page === 'room5' && <Room5 page={page} setPage={setPage}/>}
       {page === 'room6' && <Room6 page={page} setPage={setPage}/>}
       {page === 'room7' && <Room7 page={page} setPage={setPage}/>}
-      {page === 'room8' && <Room8 page={page} setPage={setPage}/>}
       {page === 'quest1' && <Quest1 page={page} setPage={setPage}/>}
       {page === 'quest2' && <Quest2 page={page} setPage={setPage}/>}
+      {page === 'quest3' && <Quest3 page={page} setPage={setPage}/>}
+      {page === 'quest4' && <Quest4 page={page} setPage={setPage}/>}
+      {page === 'quest5' && <Quest5 page={page} setPage={setPage}/>}
+      {page === 'quest6' && <Quest6 page={page} setPage={setPage}/>}
+      {page === 'quest7' && <Quest7 page={page} setPage={setPage}/>}
+      {page === 'quest8' && <Quest8 page={page} setPage={setPage}/>}
+      {page === 'quest9' && <Quest9 page={page} setPage={setPage}/>}
+      {page === 'quest10' && <Quest10 page={page} setPage={setPage}/>}
+      {page === 'quest11' && <Quest11 page={page} setPage={setPage}/>}
     </ChakraProvider>
   </>);
 }

@@ -9,6 +9,8 @@ export default function Quest2({
   }) {
     return (
       <div>
+         <p>Текст задания 2</p>
+        
          <h1>https://web.telegram.org/z/#-1651462243</h1>
 
          <p><button onClick={() => setPage('profile')}>Профиль</button></p>

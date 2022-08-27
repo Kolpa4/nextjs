@@ -2,9 +2,11 @@ import React, {useState} from 'react';
 import { Quest } from './Quest';
 
 export const FlipCoin = ({
+  max,
   page,
   setPage,
 }: {
+  max: number;
   page: string;
   setPage?: (page: string) => any;
 }) => {
@@ -20,11 +22,11 @@ export const FlipCoin = ({
   const handleClick = () => {;
     setQuest(0);
     const interval = setInterval(() => {
-      setTempNum(randomNumberInRange(1, 2));
+      setTempNum(randomNumberInRange(1, {max}));
     }, 0);
     setTimeout(() => {
       clearInterval(interval);
-      const newNum = randomNumberInRange(1, 2)
+      const newNum = randomNumberInRange(1, {max})
       setNum(newNum),
       setQuest(newNum);
     }, 0);
@@ -33,8 +35,7 @@ export const FlipCoin = ({
  
   return (<>
     <div>
-      {/* <h2>Задание: {num || tempNum}</h2> */}
-      <button onClick={handleClick}>Получить Задание</button>
+      <button onClick={handleClick}>Задание</button>
 
       {!!quest && <Quest questId={quest} page={'quest'} setPage={setPage}/>}
 

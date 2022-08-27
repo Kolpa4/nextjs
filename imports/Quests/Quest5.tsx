@@ -1,6 +1,6 @@
-import { FlipCoin } from "../FlipCoin";
 
-export default function Room5({
+
+export default function Quest5({
     page,
     setPage,
   }: {
@@ -9,8 +9,10 @@ export default function Room5({
   }) {
     return (
       <div>
-         <h1>КОМНАТА 5</h1>
-         <p><FlipCoin page={page} setPage={setPage} max = {1}/></p>
+         <p>Текст задания 5</p>
+
+         <h1>https://web.telegram.org/z/#-1651462243</h1>
+
          <p><button onClick={() => setPage('profile')}>Профиль</button></p>
       </div>
     )

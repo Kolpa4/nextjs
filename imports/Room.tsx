@@ -17,7 +17,6 @@ export const Room = ({
     roomId === 5? <p><button onClick={() => setPage('room5')}>Комната: {roomId}</button></p>:
     roomId === 6? <p><button onClick={() => setPage('room6')}>Комната: {roomId}</button></p>:
     roomId === 7? <p><button onClick={() => setPage('room7')}>Комната: {roomId}</button></p>:
-    roomId === 8? <p><button onClick={() => setPage('room8')}>Комната: {roomId}</button></p>:
     null
   )
 }

@@ -7,7 +7,7 @@ export default function Notepad({
   }) {
     return (
       <div>
-         <h1>БЛОКНОТ(test)</h1>
+         <h1>Дневник Путешественника(test)</h1>
          <p><button onClick={() => setPage('profile')}>Профиль</button></p>
       </div>
     )
