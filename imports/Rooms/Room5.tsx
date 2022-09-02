@@ -10,7 +10,7 @@ export default function Room5({
     return (
       <div>
          <h1>КОМНАТА 5</h1>
-         <p><FlipCoin page={page} setPage={setPage} max = {1}/></p>
+         <p><FlipCoin page={page} setPage={setPage} maxi = {1} roomId = {5}/></p>
          <p><button onClick={() => setPage('profile')}>Профиль</button></p>
       </div>
     )

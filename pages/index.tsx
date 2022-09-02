@@ -27,6 +27,7 @@ import Quest8 from '../imports/Quests/Quest8';
 import Quest9 from '../imports/Quests/Quest9';
 import Quest10 from '../imports/Quests/Quest10';
 import Quest11 from '../imports/Quests/Quest11';
+import { MyGlobalContext } from '../context/indexContext';
 
 const Intro = ({
   page,
@@ -44,6 +45,7 @@ export default function Index() {
   const [page, setPage] = useState<string>('intro');
   return (<>
     <ChakraProvider>
+    {/* <MyGlobalContext.Provider value= {{ roomId, setRoomId }}> */}
       {page === 'intro' && <Intro page={page} setPage={setPage}/>}
       {page === 'authorization' && <Authorisation page={page} setPage={setPage}/>}
       {page === 'profile' && <Profile page={page} setPage={setPage}/>}
@@ -67,6 +69,7 @@ export default function Index() {
       {page === 'quest9' && <Quest9 page={page} setPage={setPage}/>}
       {page === 'quest10' && <Quest10 page={page} setPage={setPage}/>}
       {page === 'quest11' && <Quest11 page={page} setPage={setPage}/>}
+      {/* </MyGlobalContext.Provider> */}
     </ChakraProvider>
   </>);
 }
