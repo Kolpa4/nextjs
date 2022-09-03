@@ -24,11 +24,11 @@ export const FlipCoin = ({
   const handleClick = () => {
     setQuest(0);
     const interval = setInterval(() => {
-      setTempNum(randomNumberInRange(1, {maxi}));
+      setTempNum(randomNumberInRange(1, maxi));
     }, 0);
     setTimeout(() => {
       clearInterval(interval);
-      const newNum = randomNumberInRange(1, {maxi})
+      const newNum = randomNumberInRange(1, maxi)
       setNum(newNum)
     }, 0);
   };

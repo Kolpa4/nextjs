@@ -31,6 +31,7 @@ import Quest9 from '../imports/Quests/Quest9';
 import Quest10 from '../imports/Quests/Quest10';
 import Quest11 from '../imports/Quests/Quest11';
 import { MyGlobalContext } from '../context/indexContext';
+import Note from '../imports/Note';
 
 const Intro = ({
   page,
@@ -59,6 +60,7 @@ export default function Index() {
           {page === 'profile' && <Profile page={page} setPage={setPage}/>}
           {page === 'portal' && <Portal page={page} setPage={setPage}/>}
           {page === 'notepad' && <Notepad page={page} setPage={setPage}/>}
+          {page === 'note' && <Note page={page} setPage={setPage}/>}
           {page === 'room1' && <Room1 page={page} setPage={setPage}/>}
           {page === 'room2' && <Room2 page={page} setPage={setPage}/>}
           {page === 'room3' && <Room3 page={page} setPage={setPage}/>}
